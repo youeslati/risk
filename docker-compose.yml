@@ -1,8 +1,8 @@
 version: '3.3'
 services:
-  docker-mariadb2:
+  docker-mariadb3:
    restart: always
-   container_name: docker-mariadb2
+   container_name: docker-mariadb3
    image: mariadb
    environment:
     MYSQL_DATABASE: helloDocker
@@ -25,7 +25,7 @@ services:
    environment:
     WAIT_HOSTS: mariadb:3306
    depends_on:
-    - docker-mariadb2
+    - docker-mariadb3
     
 
    
